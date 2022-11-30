@@ -24,5 +24,7 @@ No requirements.
 
 ## Outputs
 
-No output.
+| Name | Description |
+|------|-------------|
+| log\_group\_name | Name of the CloudWatch Log Group |
 
