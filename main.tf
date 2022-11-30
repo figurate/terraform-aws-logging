@@ -1,8 +1,14 @@
 /**
- * # Terraform Module Template
+ * # AWS CloudWatch Log Group
  *
- * [![CI](https://github.com/figurate/terraform-module-template/actions/workflows/main.yml/badge.svg)](https://github.com/figurate/terraform-module-template/actions/workflows/main.yml)
+ * [![CI](https://github.com/figurate/terraform-aws-cloudwatch-log-group/actions/workflows/main.yml/badge.svg)](https://github.com/figurate/terraform-aws-cloudwatch-log-group/actions/workflows/main.yml)
  *
  *
- * ![Terraform Module Template](terraform_module_template.png)
+ * ![AWS CloudWatch Log Group](terraform_aws-cloudwatch-log-group.png)
  */
+
+resource "aws_cloudwatch_log_group" "log_group" {
+  name              = var.name
+  retention_in_days = var.retention_in_days
+  kms_key_id        = var.kms_key_id
+}
